@@ -1,6 +1,7 @@
 import { ThemeProvider } from "@/lib/providers/next-theme-provider";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Provider } from "react-wrap-balancer";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -19,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-          {children}
+          <Provider>{children}</Provider>
         </ThemeProvider>
       </body>
     </html>
