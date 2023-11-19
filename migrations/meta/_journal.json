@@ -15,6 +15,13 @@
       "when": 1700324276575,
       "tag": "0001_far_morph",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1700368364387,
+      "tag": "0002_sloppy_firestar",
+      "breakpoints": true
     }
   ]
 }
