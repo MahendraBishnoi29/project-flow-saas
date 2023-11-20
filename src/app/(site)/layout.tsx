@@ -1,9 +1,11 @@
 import { FC } from "react";
 
-type layoutProps = {};
+type layoutProps = {
+  children: React.ReactNode;
+};
 
-const layout: FC<layoutProps> = ({}) => {
-  return <div>HOME Page layout</div>;
+const layout: FC<layoutProps> = ({ children }) => {
+  return <main> {children} </main>;
 };
 
 export default layout;
